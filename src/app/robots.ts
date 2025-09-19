@@ -28,7 +28,7 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 2,
       },
     ],
-    sitemap: 'https://portfolio-walid-ruddy.vercel.app/sitemap.xml',
-    host: 'https://portfolio-walid-ruddy.vercel.app',
+    sitemap: 'https://portfolio-two-alpha-pxq3683gpx.vercel.app/sitemap.xml',
+    host: 'https://portfolio-two-alpha-pxq3683gpx.vercel.app',
   }
 }

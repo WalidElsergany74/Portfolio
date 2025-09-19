@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "UX Developer", "Web App Developer", "Mobile Responsive Design", "PWA Developer",
     "Full Stack Developer", "Web Solutions", "Custom Web Development", "React Native Developer"
   ],
-  authors: [{ name: "Walid Elsergany", url: "https://portfolio-walid-ruddy.vercel.app" }],
+  authors: [{ name: "Walid Elsergany", url: "https://portfolio-two-alpha-pxq3683gpx.vercel.app" }],
   creator: "Walid Elsergany",
   publisher: "Walid Elsergany",
   formatDetection: {
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://portfolio-walid-ruddy.vercel.app"),
+  metadataBase: new URL("https://portfolio-two-alpha-pxq3683gpx.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Walid Elsergany - Frontend Developer Portfolio",
     description: "Professional Frontend Developer specializing in React, Next.js, TypeScript, and modern web technologies. Creating beautiful, responsive, and user-friendly web applications.",
-    url: "https://portfolio-walid-ruddy.vercel.app",
+    url: "https://portfolio-two-alpha-pxq3683gpx.vercel.app",
     siteName: "Walid Elsergany Portfolio",
     locale: "en_US",
     type: "website",
@@ -106,8 +106,8 @@ export default function RootLayout({
     "name": "Walid Elsergany",
     "jobTitle": "Frontend Developer",
     "description": "Professional Frontend Developer specializing in React, Next.js, TypeScript, and modern web technologies. Creating beautiful, responsive, and user-friendly web applications.",
-    "url": "https://portfolio-walid-ruddy.vercel.app",
-    "image": "https://portfolio-walid-ruddy.vercel.app/walid1.png",
+    "url": "https://portfolio-two-alpha-pxq3683gpx.vercel.app",
+    "image": "https://portfolio-two-alpha-pxq3683gpx.vercel.app/walid1.png",
     "sameAs": [
       "https://github.com/WalidElsergany74",
       "https://www.linkedin.com/in/walid-elsergany-3937431b7/",
