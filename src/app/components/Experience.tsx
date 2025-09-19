@@ -54,7 +54,7 @@ export function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Experience & Education
+            Experience 
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
