@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Disallow: /private/
+Disallow: /admin/
+
+Sitemap: https://walid-portfolio.vercel.app/sitemap.xml
+Host: https://walid-portfolio.vercel.app

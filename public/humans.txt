@@ -1,0 +1,28 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Walid Elsergany -- Frontend Developer -- walidemad998@gmail.com
+    GitHub: https://github.com/WalidElsergany74
+    LinkedIn: https://www.linkedin.com/in/walid-elsergany-3937431b7/
+    WhatsApp: +201008421723
+
+# THANKS
+
+    Thanks to all the open source contributors who made this possible.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JavaScript, TypeScript
+    React, Next.js, TailwindCSS
+    Framer Motion, Lucide React
+    Vercel (Hosting)
+    Git, GitHub
+
+# SITE
+
+    Last update: 2024/01/01
+    Language: English
+    Doctype: HTML5
+    IDE: VS Code
