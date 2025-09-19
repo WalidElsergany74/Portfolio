@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://walid-portfolio.vercel.app'
+  const baseUrl = 'https://portfolio-walid-ruddy.vercel.app'
   const currentDate = new Date()
   
   return [
@@ -46,6 +46,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.6,
+    },
+    // Additional pages for better SEO
+    {
+      url: `${baseUrl}/manifest.json`,
+      lastModified: currentDate,
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/robots.txt`,
+      lastModified: currentDate,
+      changeFrequency: 'yearly',
+      priority: 0.1,
     },
   ]
 }

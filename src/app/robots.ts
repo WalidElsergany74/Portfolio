@@ -6,20 +6,29 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/private/', '/admin/'],
+        disallow: ['/private/', '/admin/', '/api/'],
+        crawlDelay: 1,
       },
       {
         userAgent: 'Googlebot',
         allow: '/',
-        disallow: ['/private/', '/admin/'],
+        disallow: ['/private/', '/admin/', '/api/'],
+        crawlDelay: 1,
       },
       {
         userAgent: 'Bingbot',
         allow: '/',
-        disallow: ['/private/', '/admin/'],
+        disallow: ['/private/', '/admin/', '/api/'],
+        crawlDelay: 1,
+      },
+      {
+        userAgent: 'Slurp',
+        allow: '/',
+        disallow: ['/private/', '/admin/', '/api/'],
+        crawlDelay: 2,
       },
     ],
-    sitemap: 'https://walid-portfolio.vercel.app/sitemap.xml',
-    host: 'https://walid-portfolio.vercel.app',
+    sitemap: 'https://portfolio-walid-ruddy.vercel.app/sitemap.xml',
+    host: 'https://portfolio-walid-ruddy.vercel.app',
   }
 }

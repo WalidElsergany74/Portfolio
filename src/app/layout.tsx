@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,9 +24,14 @@ export const metadata: Metadata = {
     "JavaScript Developer", "Web Development", "Portfolio", "UI/UX Developer", 
     "Responsive Design", "Modern Web Technologies", "React Expert", "Next.js Expert",
     "TypeScript Expert", "Frontend Engineer", "Web Developer Egypt", "React Portfolio",
-    "Next.js Portfolio", "Hire Frontend Developer", "React Freelancer", "Web Development Services"
+    "Next.js Portfolio", "Hire Frontend Developer", "React Freelancer", "Web Development Services",
+    "Mansoura Developer", "Egypt Web Developer", "React.js Expert", "Next.js Expert",
+    "TypeScript Expert", "TailwindCSS Developer", "Frontend Engineer Egypt", "Web Developer Portfolio",
+    "React Freelancer Egypt", "Next.js Freelancer", "TypeScript Freelancer", "UI Developer",
+    "UX Developer", "Web App Developer", "Mobile Responsive Design", "PWA Developer",
+    "Full Stack Developer", "Web Solutions", "Custom Web Development", "React Native Developer"
   ],
-  authors: [{ name: "Walid Elsergany", url: "https://walid-portfolio.vercel.app" }],
+  authors: [{ name: "Walid Elsergany", url: "https://portfolio-walid-ruddy.vercel.app" }],
   creator: "Walid Elsergany",
   publisher: "Walid Elsergany",
   formatDetection: {
@@ -33,14 +39,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://walid-portfolio.vercel.app"),
+  metadataBase: new URL("https://portfolio-walid-ruddy.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Walid Elsergany - Frontend Developer Portfolio",
     description: "Professional Frontend Developer specializing in React, Next.js, TypeScript, and modern web technologies. Creating beautiful, responsive, and user-friendly web applications.",
-    url: "https://walid-portfolio.vercel.app",
+    url: "https://portfolio-walid-ruddy.vercel.app",
     siteName: "Walid Elsergany Portfolio",
     locale: "en_US",
     type: "website",
@@ -74,7 +80,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code", // Replace with actual verification code
+    google: "Yh11JiefW7EiCWAnzpnagHkuZ4tHTTDt5NJGO9EkbvY",
   },
   category: "technology",
   classification: "Portfolio Website",
@@ -99,9 +105,9 @@ export default function RootLayout({
     "@type": "Person",
     "name": "Walid Elsergany",
     "jobTitle": "Frontend Developer",
-    "description": "Professional Frontend Developer specializing in React, Next.js, TypeScript, and modern web technologies.",
-    "url": "https://walid-portfolio.vercel.app",
-    "image": "https://walid-portfolio.vercel.app/walid1.png",
+    "description": "Professional Frontend Developer specializing in React, Next.js, TypeScript, and modern web technologies. Creating beautiful, responsive, and user-friendly web applications.",
+    "url": "https://portfolio-walid-ruddy.vercel.app",
+    "image": "https://portfolio-walid-ruddy.vercel.app/walid1.png",
     "sameAs": [
       "https://github.com/WalidElsergany74",
       "https://www.linkedin.com/in/walid-elsergany-3937431b7/",
@@ -111,6 +117,7 @@ export default function RootLayout({
     "telephone": "+201008421723",
     "address": {
       "@type": "PostalAddress",
+      "addressLocality": "Mansoura",
       "addressCountry": "EG"
     },
     "knowsAbout": [
@@ -124,18 +131,35 @@ export default function RootLayout({
       "Web Development",
       "Frontend Development",
       "UI/UX Design",
-      "Responsive Design"
+      "Responsive Design",
+      "Redux Toolkit",
+      "Zustand",
+      "Prisma",
+      "PostgreSQL",
+      "MongoDB",
+      "REST APIs",
+      "Strapi",
+      "Framer Motion",
+      "Figma"
     ],
     "hasOccupation": {
       "@type": "Occupation",
       "name": "Frontend Developer",
       "description": "Creating beautiful, responsive, and user-friendly web applications using modern technologies",
-      "skills": ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "TailwindCSS"]
+      "skills": ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "TailwindCSS", "Redux", "Zustand", "Prisma", "PostgreSQL"]
     },
     "alumniOf": {
       "@type": "Organization",
       "name": "Self-taught Developer"
-    }
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelancer",
+      "description": "Independent Frontend Developer"
+    },
+    "award": "100% Client Satisfaction",
+    "nationality": "Egyptian",
+    "birthPlace": "Egypt"
   };
 
   return (
@@ -155,6 +179,8 @@ export default function RootLayout({
         <meta name="theme-color" content="#3b82f6" />
         <meta name="color-scheme" content="dark" />
         <meta name="supported-color-schemes" content="dark" />
+        <meta name="google-site-verification" content="Yh11JiefW7EiCWAnzpnagHkuZ4tHTTDt5NJGO9EkbvY" />
+        <GoogleAnalytics />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
