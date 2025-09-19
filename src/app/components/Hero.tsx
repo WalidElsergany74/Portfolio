@@ -22,23 +22,25 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-14 items-center">
           {/* Left side - Content */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.45, ease: "easeOut" }}
             className="text-center lg:text-left"
+            style={{ willChange: "transform, opacity" }}
           >
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
               className="mb-6 sm:mb-8 lg:mb-10"
+              style={{ willChange: "transform, opacity" }}
             >
               <span className="text-base sm:text-lg text-primary font-medium drop-shadow-sm">Hello, I&apos;m</span>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-6xl font-bold text-white mt-2 mb-2 sm:mb-3 lg:mb-4 drop-shadow-lg text-glow">
                 Walid Elsergany
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold text-gray-300 mb-3 sm:mb-4 lg:mb-5 drop-shadow-md">
-                React & Next.js Developer | TypeScript Expert
+                Frontend Developer
               </h2>
               <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 max-w-lg mx-auto lg:mx-0 leading-relaxed drop-shadow-sm">
                 Professional Frontend Developer creating beautiful, responsive, and user-friendly web applications using React, Next.js, TypeScript, and modern web technologies. Available for hire.
@@ -47,10 +49,11 @@ export function Hero() {
 
             {/* Action Buttons */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.4, delay: 0.2, ease: "easeOut" }}
               className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-6 sm:mb-8"
+              style={{ willChange: "transform, opacity" }}
             >
             <motion.a
   whileHover={{ scale: 1.08 }}
@@ -84,10 +87,11 @@ export function Hero() {
 
             {/* Social Links */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.4, delay: 0.3, ease: "easeOut" }}
               className="flex justify-center lg:justify-start space-x-4 sm:space-x-6"
+              style={{ willChange: "transform, opacity" }}
             >
               <motion.a
                 whileHover={{ scale: 1.1, y: -2 }}
@@ -106,7 +110,7 @@ export function Hero() {
                 href="https://www.linkedin.com/in/walid-elsergany-3937431b7/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 sm:p-3 md:p-4 rounded-lg bg-gray-800/50 hover:bg-primary/20 hover:border-primary/50 border border-gray-700/50 transition-colors glow-blue-soft backdrop-blur-sm"
+                className="p-3 sm:p-4 rounded-lg bg-gray-800/50 hover:bg-primary/20 hover:border-primary/50 border border-gray-700/50 transition-colors glow-blue-soft backdrop-blur-sm"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
@@ -115,7 +119,7 @@ export function Hero() {
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 href="mailto:walidemad998@gmail.com"
-                className="p-2 sm:p-3 md:p-4 rounded-lg bg-gray-800/50 hover:bg-primary/20 hover:border-primary/50 border border-gray-700/50 transition-colors glow-blue-soft backdrop-blur-sm"
+                className="p-3 sm:p-4 rounded-lg bg-gray-800/50 hover:bg-primary/20 hover:border-primary/50 border border-gray-700/50 transition-colors glow-blue-soft backdrop-blur-sm"
                 aria-label="Email"
               >
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
@@ -126,7 +130,7 @@ export function Hero() {
                 href="https://wa.me/201008421723"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 sm:p-3 md:p-4 rounded-lg bg-gray-800/50 hover:bg-primary/20 hover:border-primary/50 border border-gray-700/50 transition-colors glow-blue-soft backdrop-blur-sm"
+                className="p-3 sm:p-4 rounded-lg bg-gray-800/50 hover:bg-primary/20 hover:border-primary/50 border border-gray-700/50 transition-colors glow-blue-soft backdrop-blur-sm"
                 aria-label="WhatsApp"
               >
                 <BsWhatsapp className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
@@ -136,10 +140,11 @@ export function Hero() {
 
           {/* Right side - Image/Animation */}
          <motion.div
-  initial={{ opacity: 0, x: 50 }}
+  initial={{ opacity: 0, x: 30 }}
   animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.8, delay: 0.2 }}
+  transition={{ duration: 0.45, delay: 0.1, ease: "easeOut" }}
   className="flex justify-center lg:justify-end mt-8 sm:mt-12 lg:mt-0"
+  style={{ willChange: "transform, opacity" }}
 >
   <div className="relative flex items-center justify-center">
     {/* صورة البروفايل */}
@@ -172,7 +177,7 @@ export function Hero() {
           }}
           priority
           sizes="(max-width: 640px) 340px, (max-width: 768px) 360px, (max-width: 1024px) 380px, 400px"
-          quality={90}
+          quality={80}
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
         />
@@ -181,7 +186,7 @@ export function Hero() {
 
     {/* الدايرة المتحركة حوالين الصورة */}
     <motion.svg 
-      className={"w-[460px] h-[460px] sm:w-[490px] sm:h-[490px] md:w-[520px] md:h-[520px] lg:w-[460px] lg:h-[460px] absolute"}
+      className={"w-[430px] h-[430px] sm:w-[490px] sm:h-[490px] md:w-[520px] md:h-[520px] lg:w-[460px] lg:h-[460px] absolute"}
       fill={"transparent"}
       viewBox={"0 0 506 506"}
       xmlns={"http://www.w3.org/2000/svg"}
@@ -211,7 +216,7 @@ export function Hero() {
         className={"md:hidden block"}
           cx={"253"} 
           cy={"253"} 
-          r={"212"} 
+          r={"210"} 
           stroke="url(#gradient1)"
           strokeWidth={"3"}
           strokeLinejoin={"round"}
@@ -277,7 +282,7 @@ export function Hero() {
         repeat: Infinity,
         ease: "easeInOut"
       }}
-      className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 md:-top-4 md:-right-4 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-accent rounded-lg flex items-center justify-center z-20 glow-blue-soft"
+      className="absolute top-10 right-10 sm:top-0 sm:right-0 md:-top-4 md:-right-4 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-accent rounded-lg flex items-center justify-center z-20 glow-blue-soft"
     >
       <span className="text-lg sm:text-xl md:text-2xl">
         <CodeXml className="text-primary" />
@@ -295,7 +300,7 @@ export function Hero() {
         ease: "easeInOut",
         delay: 1
       }}
-      className="absolute -bottom-2 -left-2 sm:-bottom-3 sm:-left-3 md:-bottom-4 md:-left-4 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-secondary rounded-full flex items-center justify-center z-20 glow-blue-soft"
+      className="absolute bottom-10 left-10 sm:bottom-0 sm:left-0 md:-bottom-4 md:-left-4 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-secondary rounded-full flex items-center justify-center z-20 glow-blue-soft"
     >
       <span className="text-sm sm:text-base md:text-lg">
         <Laptop className="text-primary" />

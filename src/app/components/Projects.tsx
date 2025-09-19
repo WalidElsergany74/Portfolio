@@ -87,11 +87,12 @@ export function Projects() {
     <section id="projects" className="py-12 sm:py-16 lg:py-20 px-3 sm:px-4 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.45, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-12 sm:mb-16"
+          style={{ willChange: "transform, opacity" }}
         >
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4">
             Featured Projects
@@ -106,10 +107,10 @@ export function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.45, delay: Math.min(index * 0.07, 0.28), ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
               whileHover={{ y: -5 }}
               className="bg-card rounded-lg border border-primary/20 overflow-hidden hover:shadow-lg transition-all duration-300 group card-glow"
             >

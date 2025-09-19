@@ -24,14 +24,15 @@ export function About() {
     <section id="about" className="py-12 sm:py-16 lg:py-20 px-3 sm:px-4 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.45, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-12 sm:mb-16"
+          style={{ willChange: "transform, opacity" }}
         >
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4">
-            About Me - Frontend Developer
+            About Me 
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-primary mx-auto mb-6 sm:mb-8"></div>
         </motion.div>
@@ -39,10 +40,11 @@ export function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
           {/* Left side - Text content */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.45, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            style={{ willChange: "transform, opacity" }}
           >
             <h3 className="text-xl sm:text-2xl font-semibold text-foreground mb-4 sm:mb-6">
               Expert React & Next.js Developer
@@ -74,19 +76,20 @@ export function About() {
 
           {/* Right side - Skills icons */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.45, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
             className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6"
+            style={{ willChange: "transform, opacity" }}
           >
             {skills.map((skill, index) => (
               <motion.div
                 key={skill.name}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
+                transition={{ duration: 0.35, delay: Math.min(index * 0.05, 0.25) }}
+                viewport={{ once: true, amount: 0.2 }}
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="flex flex-col items-center p-4 sm:p-6 bg-card rounded-lg border border-primary/20 hover:shadow-lg transition-all duration-300 card-glow"
               >
